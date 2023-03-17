@@ -12,21 +12,54 @@
 
 <body>
     <section class="topo">
-        <nav>
-            <img src="images/logo.svg" style="width: 101px; height: 40px;" alt="Logo da Blogr">
-            <ul>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <ul class="login-register">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-        </ul>
+        <div class="navbar-login-register">
+            <div class="navbar mb-2">
+                <nav>
+                    <img src="images/logo.svg" style="width: 101px; height: 40px;" alt="Logo da Blogr" class="mx-2">
 
-        <div></div>
-        <div></div>
+                    <ul>
+                        <li class="mx-1">
+                            <a href="#">Product</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                                <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                            </svg>
+                        </li>
+                        <li>
+                            <a href="#">Company</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                                <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                            </svg>
+                        </li>
+                        <li class="mx-1" class="connect">
+                            <a href="#" id="connect">Connect</a>
+                            <svg id="connect-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                                <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                            </svg>
+                            <ul class="mt-1" id="connect-dropdown">
+                                <li class="mb-1"><a href="#">Contact</a></li>
+                                <li class="mb-1"><a href="#">Newsletter</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-register">
+                <ul>
+                    <a href="#" class="mx-1">Login</a>
+                    <a href="#" class="cta">Sign Up</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topo-textos">
+            <h2 class="mt-2 mb-1">A modern publishing plataform</h2>
+            <p class="mb-3">Grow your audience and build your online brand</p>
+            <div>
+                <a href="#" class="cta mx-1">Start for Free</a>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -63,6 +96,7 @@
 
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
