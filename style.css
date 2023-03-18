@@ -72,7 +72,13 @@ body, html {
 }
 
 
+h2 {
+    font-size: 3.2rem;
+}
 
+p {
+    font-size: 2rem;
+}
 
 body {
     margin: 0 auto;
@@ -83,8 +89,11 @@ body {
     font-size: 1.6rem;
 }
 
+/*---------- SECTION TOPO ----------*/
+
 .topo {
-    height: 500px;
+    height: 50rem;
+    font-size: 1.6rem;
     background:  url(images/bg-pattern-intro-desktop.svg), linear-gradient(to right, var(--VeryLightRed), var(--LightRed));
     background-repeat: no-repeat;
     background-position: center;
@@ -102,6 +111,10 @@ body {
 
 .navbar-login-register {
     align-items: self-start;
+}
+
+.login-register ul {
+    height: 40px;
 }
 
 .cta, .cta a {
@@ -156,3 +169,301 @@ body {
     background-color: var(--White);
     color: var(--Verylightred);
 }
+
+.burger-menu {
+    display: none;
+}
+
+/*---------- SECTION DOIS ----------*/
+
+section.dois {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
+}
+
+.dois h2, .dois h3 {
+    color: var(--Verydarkblue);
+}
+
+.dois h2 {
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+    left: -50%;
+    right: -50%;
+}
+
+.dois h3 {
+    font-size: 3.2rem;
+}
+
+.dois p {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.textos-imagem {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.textos {
+    width: 50%;
+    padding: 2rem;
+}
+
+.imagem {
+   overflow-x: hidden;
+   width: 50%;
+}
+
+.imagem img:last-child {
+    display: none;
+    width: 100%;
+}
+
+
+.imagem img {
+    width: 140%;
+    color: black;
+}
+
+/*---------- SECTION TRES ----------*/
+
+section.tres {
+    background-image: url(images/bg-pattern-circles.svg), linear-gradient(to right, var(--VeryDarkGrayBlue), var(--VeryDarkDesaturatedBlue));
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: flex;
+    align-items: center;
+    height: 45rem;
+    padding: 4rem 6rem;
+    border-radius: 0 5rem 0 5rem;
+}
+
+.phone-img {
+    width: 50%;
+}
+
+.phone-img img {
+    height: 50%;
+    width: 100%;
+}
+
+
+.tres .textos p {
+    font-size: 2rem;
+    color: var(--GrayishBlue);
+    line-height: 3.5rem;
+}
+
+/*---------- SECTION QUATRO ----------*/
+section.quatro {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quatro h3 {
+    color: var(--Verydarkblue);
+    font-size: 3.2rem;
+}
+
+.quatro p {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.computer-img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.computer-img img {
+    margin-left: -24rem;
+    width: 140%;
+}
+
+/*---------- FOOTER ----------*/
+
+footer {
+    font-size: 1.6rem;
+    background-color: var(--VeryDarkBlackBlue);
+    color: var(--White);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 5rem 0 0;
+    padding: 5rem;
+}
+
+footer ul li {
+    padding: .5rem 0;
+}
+
+footer ul li a {
+    color: var(--GrayishBlue);
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    body, html {
+        font-size: 40%;
+    }
+ }
+
+@media (max-width: 760px) {
+    #mainnav, .login-register {
+        display: none;
+    }
+
+    .topo {
+        padding: 3.2rem;
+    }
+
+
+    .burger-menu {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu, .menu ul, section.tres, section.quatro {
+        flex-direction: column;
+    }
+
+    .menu {
+        font-size: 3.0rem;
+        height: 80vh;
+        width: 90vw;
+        background-color: var(--White);
+        padding: 2rem 0;
+        border-radius: 2rem;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu ul li {
+        padding: 2rem 0;
+    }
+
+    .menu ul li a {
+        color: var(--MediumGray);
+    }
+
+    .menu ul li a.signup {
+        padding: 1.5rem 3.5rem;
+        border: 1px solid var(--White);
+        background-image: linear-gradient(to right, var(--VeryLightRed), var(--LightRed));
+        color: var(--White);
+        border-radius: 5rem;
+    }
+
+    .textos-imagem {
+        flex-direction: column-reverse;
+    }
+
+    .dois, section.tres, .quatro, footer {
+        padding: 3.2rem;
+    }
+
+    .dois h2 {
+        position: static;
+        margin: 5rem 0;
+    }
+
+    .imagem, .textos {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.tres {
+        margin-top: 200px;
+        height: 700px;
+        justify-content: space-between;
+        background-size: contain;
+    }
+
+    .phone-img {
+        width: 100%;
+        position: relative;
+    }
+
+    .phone-img img {
+        height: auto;
+        position: absolute;
+        top: -200px;
+        left: 0;
+    }
+
+    section.quatro, footer {
+        margin-top: 50px;
+
+    }
+
+    .imagem img:first-child {
+        display: none;
+    }
+
+    .imagem img:last-child {
+        display: block;
+        width: 100%;
+    }
+
+
+    .computer-img img:last-child {
+        display: block;
+        width: 100%;
+    }
+
+    .computer-img img:first-child {
+        display: none;
+    }
+
+    .computer-img {
+        width: 100%;
+    }
+
+    .computer-img img {
+        width: 100%;
+        margin: 0;
+    }
+
+ }
+
+
+ @media (max-width: 680px) {
+    section.tres {
+        height: 600px;
+    }
+ }
+
+ @media (max-width: 580px) {
+    section.tres {
+        height: 500px;
+    }
+ } 
+ 
+ @media (max-width: 480px) {
+    section.tres {
+        height: 420px;
+    }
+ }
