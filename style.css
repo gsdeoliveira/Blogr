@@ -289,6 +289,12 @@ section.quatro {
     width: 140%;
 }
 
+.computer-img img:last-child {
+    display: none;
+    width: 100%;
+}
+
+
 /*---------- FOOTER ----------*/
 
 footer {
@@ -334,6 +340,14 @@ footer ul li a:hover {
         display: flex;
         align-items: center;
         position: relative;
+    }
+
+    .burger-menu img:last-child {
+        display: none;
+    }
+
+    .burger-connect ul#burger-connect-menu {
+        display: none;
     }
 
     .menu, .menu ul, section.tres, section.quatro {
